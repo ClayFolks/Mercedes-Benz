@@ -1,0 +1,1026 @@
+
+/*
+        ======================
+    //// MERCEDES-BENZ PROJECT \\\\
+        ======================
+*/  
+
+/* _____________FONTS_____________ */
+
+@font-face { /* #search_box div div div h1 */
+    font-family: "MCLASSIC";
+    src: url(../fonts/MCLASSIC.ttf);
+}
+
+@font-face { /* noot used yet */
+    font-family: "Engage";
+    src: url(../fonts/Engage.ttf);
+}
+
+@font-face { /* #account_box div div div p */
+    font-family: "APOLLO";
+    src: url(../fonts/APOLLO.otf);
+}
+@font-face { /* #shopping_tools p , .slide .Box h1 */
+    font-family: "EPICENTRUM";
+    src: url(../fonts/EPICENTRUM.otf);
+}
+
+
+
+/*________________Main Section________________*/
+
+html{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: auto;
+    width: 100%;
+}
+
+
+body{
+    margin : 0px;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    counter-reset: section;
+}
+
+/*____________main_container section___________*/
+
+#main_container{
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+}
+
+@media only screen and (max-width : 1000px){
+    #main_container{
+        background-position: center bottom;
+        background-size: 100% 70%;
+    }
+}
+
+#main_container nav{
+    width: 100%;
+    min-height: 40px;
+    background-color: black;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    color:white;
+    padding-bottom: 0px;
+    padding-left: 10%;
+    padding-right: 7%;
+    padding-top: 18px;
+    z-index: 999;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    left: 0px;
+    border: solid thin black; /* important to keep the NAV styling */
+}
+
+@media only screen and (max-width : 1000px){
+    #main_container nav{
+
+    }
+}
+
+#main_container nav ul{
+    list-style-type: none;
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
+#main_container nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 20px;
+    float: left;
+    transition: color 0.2s;
+}
+
+#main_container nav ul li:hover{
+    color: dodgerblue;
+}
+
+#main_container nav ul li :nth-child(n+1){
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 0px;
+    margin-bottom: 10px;
+    position: absolute;
+    top:5px;
+    left: 10px;
+}
+
+#main_container nav ul li.right_menu {
+    display: inline-block;
+    float: right;
+    position: relative;
+    transition: color 0.2s;
+    margin-left: 14px;
+    width: auto;
+    padding: 10px;
+    padding-left: 38px;
+    cursor: pointer;
+}
+
+#toggle{
+    display: inline-block;
+    transition: color 0.2s;
+    margin-left: 14px;
+    width: auto;
+    padding: 10px;
+    padding-left: 38px;
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+}
+
+
+#main_container nav ul li.right_menu i  {
+    position: absolute;
+    top: 1px;
+    left: 6px;
+    min-width: 15px;
+    display: inline-block;
+    text-wrap: nowrap;
+    padding: 5px;
+}
+
+
+/*____________________Slider___________________*/
+
+#slider{
+    width: 100%;
+    min-height: 100%; 
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    background: url('../Images/main1.png');
+    background-position: center fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+    position: sticky;
+    position: -webkit-sticky;
+    top:0px
+}
+
+.slide .Box{
+    width: 35%;
+    min-height: 180px;
+    font-size: large;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(0 0 0 / 40%);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 5px;
+    position: sticky;
+    position: -webkit-sticky;
+    left: 3%;
+    top: 30%;
+}
+
+.slide .Box h1{
+    font-family: "EPICENTRUM";
+    color:white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.slide .Box h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+@media only screen and (max-width : 1000px){
+    .slide .Box{
+        left: 0%;
+        top: 11.5%;
+        width: 100%;
+        background-color: rgb(0 0 0 / 90%);
+    }
+}
+
+#btn_wrapper .button{
+    border: solid thin black;
+    border-radius: 5px;
+    width: 160px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn1{
+    background-color: dodgerblue;
+    color: white;
+}
+.btn1:hover{
+    background-color: rgb(113, 180, 247);
+}
+
+.btn2{
+    background-color: gray;
+    color: black;
+}
+.btn2:hover{
+    background-color: rgb(220, 220, 220);
+}
+
+#indicator{
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 45%;
+    left: 95%; /*according to direction of text-align parameter*/
+    width: 50px;
+    height: 100px;
+    z-index: 990;
+    color: blue;
+    font-size: large;
+    padding: 5px;
+    
+    text-align: right;
+}
+
+.indicator_sign{
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 22px;
+    margin-top: 10px;
+    color: white;
+    display: block;
+    cursor: pointer;
+    border: solid 2px white;
+    position: relative;
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+}
+
+.indicator_sign:hover{
+    border: solid 2px dodgerblue;
+}
+
+.nested_indicator_sign{
+    width: 7px;
+    height: 7px;
+    padding: 7px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    display: block;
+    cursor: pointer;
+    border: solid 2px white;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+}
+
+.nested_indicator_sign:hover{
+    background-color: dodgerblue;
+}
+
+
+/*________________ SEARCH BOX ________________*/
+
+#search_box{
+    display: none;
+    width: 90%;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    top: 78px;
+    left: 5%;
+    z-index: 990;
+}
+
+#search_box div div div h1{
+    font-family: "MCLASSIC";
+}
+
+#search{
+    display: 1; 
+    width: 70%; 
+    height: 40px;  
+    color: black; 
+    font-size: 22px;
+    background:none;  
+    padding: 8px; 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+
+    border-bottom: solid thin black;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+}
+
+#magnifier{
+
+}
+
+#quick_links{
+    list-style-type: none; 
+    font-size: large;
+}
+
+.link{
+    margin-top: 5px;
+    cursor: pointer;
+    font-weight: 300; 
+    color: dodgerblue;
+    
+    
+}
+
+
+
+/*________________ VEHICLE BOX ________________*/
+
+#vehicle_box{
+    display: none;
+    border:solid thin rgb(0, 0, 0);
+    width: 98%;
+    height: 20%;
+    background-color: white;
+    position: absolute;
+    left:1%;
+    top: 90px;
+    z-index: 991;
+    overflow-y: auto;
+}
+#vehicle_box li{
+    font-size:15px;
+    padding: 8px;
+}
+
+.cars_sec{
+    display: none;
+}
+.vehicle_row{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: 300px;
+    margin-top: 10px;
+    
+}
+.vehicle_col{
+    flex: 32.5%;
+    margin-right: 0.5%;
+    padding: 1.3%;
+    
+}
+.vehicle_col img{
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+.vehicle_col p{
+    padding: 8px;
+    text-align: center;
+}
+.vehicle_col p span{
+    display: block;
+    font-size: 16px;
+}
+.right_shop_nav{
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.rightpic_row{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: 100px;
+    margin-top: 10px;
+}
+.rightpic_col{
+    flex: 50%;
+}
+.rightpic_col img{
+    width: 100%;
+    height: 70px;
+    display: block;
+}
+.rightpic_col .title{
+    list-style-type: none;
+    height: auto;
+    padding: 0%;
+    padding-top: 8px;
+
+}
+.rightpic_col .title li{
+
+}
+.rightpic_col .title li a{
+    color: white;
+    margin-left: 0px;
+}
+
+/*_______________ SHOPPING BOX _______________*/
+
+#shopping_box{
+    display: none;
+    border:solid thin rgb(0, 0, 0);
+    width: 98%;
+    height: 20%;
+    background-color: white;
+    position: absolute;
+    left:1%;
+    top: 90px;
+    z-index: 991;
+    overflow-y: auto;
+}
+#shopping_box li{
+    font-size:15px;
+    padding: 8px;
+}
+
+.cars_sec{
+    display: none;
+}
+.shopping_row{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: 300px;
+    margin-top: 10px;    
+}
+.shopping_col{
+    flex: 1;
+    margin-right: 0.5%;
+    padding: 4%;
+    
+}
+.shopping_col .title{
+    padding-top: 6%;
+    
+}
+.shopping_col .title li{
+    margin-top: 3%;
+    
+}
+.shopping_col img{
+    width: 20%;
+    height: 250px;
+    display: block;
+    float: right;
+}
+.shopping_col p{
+    padding: 8px;
+    text-align: center;
+    float: left;
+}
+.shopping_col p span{
+    display: block;
+    font-size: 16px;
+}
+
+/*_______________ ELECTRIC BOX _______________*/
+
+#electric_box{
+    display: none;
+    width: 90%;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    top: 78px;
+    left: 5%;
+    z-index: 991;
+}
+.electric_coli{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    
+}
+
+.electric_row{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: 300px;
+    margin-top: 10px;
+
+}
+
+.electric_col{
+    flex: 45%;
+    margin-right: 0.5%;
+}
+
+.electric_col img{
+    width: 20%;
+    height: 250px;
+    display: block;
+    float: right;
+}
+.electric_title{
+    font-size: 17px;
+    list-style-type: none;
+    
+
+}
+.electric_title li{
+    padding-top: 16px;
+}
+
+/*______________ FIND DEALER BOX ______________*/
+
+#dealer_box{
+    display: none;
+    width: 90%;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    top: 78px;
+    left: 5%;
+    z-index: 991;
+}
+
+
+/*______________ MY ACCOUNT BOX ______________*/
+
+#account_box{
+    display: none;
+    width: 90%;
+    height: 450px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 78px;
+    left: 5%;
+    z-index: 991;
+    padding: 42px;
+}
+
+#account_box div div div h1{
+    font-size: 36px;
+    font-family: "APOLLO";
+}
+
+#account_box div div div p{
+    font-size: 18px;
+    
+}
+
+#account_box div div div button{
+    padding: 3px;
+    border-radius: 3px;
+    color: white;
+    background-color: dodgerblue;
+    font-size: 14px;
+    width: 120px;
+    height: 30px;
+    border: none !important;
+}
+
+#account_box div div div button:hover{
+    background-color: rgb(88, 163, 238);
+}
+
+#account_box div div div a{
+    color: white;
+    transition: color 0.2s ease;
+    font-size: 12px;
+}
+
+#account_box div div div a:hover{
+    color: dodgerblue;
+}
+
+
+/* _______________Body Container_______________*/
+
+#Body_Container{
+    width: 100%; 
+    height: 500px; 
+    position: relative; 
+    z-index: 995;
+}
+
+
+/* _______________Tools Section_______________*/
+
+#shopping_tools{
+    margin: 0;
+    width: 100%;
+    height: 700px;
+    padding: 1%;
+    justify-content: center;
+    z-index: 98;
+}
+
+#shopping_tools p{
+    font-size: 24px;
+    font-family: "EPICENTRUM";
+    width: 100%;
+    padding: 8px;
+    display: block;
+    text-align: center;
+}
+
+#tools_wrapper{
+    width: 100%;
+    padding: 1%;
+    height: auto;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-wrap: nowrap; 
+    position: relative;
+    
+}
+
+.tool{
+    width: 190px; /* go together with background-size */
+    height: 400px; /* go together with background-size */
+    margin: 0 4%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease-in-out;
+    cursor: pointer;
+    background-size: 190px 400px; /* go together with width */
+    text-align: center;
+
+    display: flex; /* Center content */
+    flex-direction: column; /* Vertical stacking */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding-top: 20px; /* Adjust to lower content */
+}
+
+.tool:hover{
+    background-size: 210px 440px;
+}
+
+/* the icons */
+.tool i { 
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    position: relative;
+    transition: top 0.4s ease-in-out;
+    -webkit-transition: top 0.4s ease-in-out;
+    top: 35%; /* Adjust to lower position */
+}
+
+.tool:hover i {
+    top: 30%; /* Change position on hover */
+    color: white;
+}
+
+@media only screen and (min-width : 400px){
+    .tool:hover i {
+        color: rgb(205, 230, 255);
+    }
+}
+
+/* text within span inside <a> link */
+.tool a {
+    display: block;
+    position: absolute;
+    bottom: 25%; /* Adjust to lower position */
+    text-decoration: none;
+    font-size: 22px;
+    transition: bottom 0.4s ease-in-out;
+    -webkit-transition: bottom 0.4s ease-in-out;
+}
+
+@media only screen and (max-width : 1200px) {
+    .tool a{
+        font-size: 14px;
+    }
+}
+
+.tool:hover a {
+    bottom: 30%; /* Change position on hover */
+
+    /* color: Can't handle color; */
+}
+
+.tool a span{
+    color: white;
+}
+
+.tool a:visited{
+    color: white;
+}
+
+
+/* _______________body-slider________________*/
+
+.body_slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-frame {
+    width: 90%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    transition: opacity 1s;
+    position: absolute;
+}
+
+.images img.active {
+    display: block;
+    opacity: 1;
+}
+
+.articles {
+    display: flex;
+    width: 90%;
+}
+
+.article {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    transition: filter 1s, opacity 1s;
+    position: relative;
+}
+
+.article .timer-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: red;
+    width: 0;
+}
+
+.article.active .timer-bar {
+    animation: timer 5s linear infinite;
+}
+
+@keyframes timer {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+.article.blur {
+    filter: blur(2px);
+}
+
+.article h2 {
+    margin-top: 0;
+    
+}
+
+.article p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.btn{
+    border: solid thin black;
+    color: dodgerblue;
+    border-radius: 5px;
+    width: 160px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(113, 180, 247);
+}
+
+
+/* _________________spotlight________________*/
+
+#spotlight{
+    margin: 0;
+    margin-top: 90px;
+    width: 100%;
+    height: 900px;
+    padding: 1%;
+    justify-content: center;
+}
+
+/* titles */
+#spotlight p{
+    font-size: 18px;
+    font-family: "Arial, Helvetica, sans-serif";
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+    display: block;
+    color: rgb(45, 45, 45);
+    position: relative;
+}
+
+/* section text */
+.spot_img p{
+    font-size: 17px;
+    font-family: "Arial, Helvetica, sans-serif";
+    text-align: left;
+    width: 100%;
+    padding: 3px;
+    display: block;
+    color: red;
+    position: absolute;
+}
+
+#spotlight h1{
+    font-size: 22px;
+    font-family: "EPICENTRUM";
+    font-weight: 300;
+    width: 100%;
+    padding: 8px;
+    display: block;
+    color: black;
+    text-align: center;
+}
+
+#spotlight h2{
+    font-size: 18px;
+    font-family: "EPICENTRUM";
+    font-weight: 300;
+    width: 100%;
+    padding: 8px;
+    display: block;
+
+    text-align: left;
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+/* adds numbering */
+.spot_img h2::before{
+    counter-increment: section;
+    content: " " counter(section) ") ";
+}
+
+.spot_img img{
+    cursor: pointer;
+}
+
+
+/* __________________future________________ */
+
+#future{
+    margin-top: 30px;
+    width: 100%;
+    height: 800px;
+    padding: 1%;
+    background-color: white;
+    justify-content: center;
+    border: solid thin none;
+    position: relative;
+}
+
+#future p {
+    width: 100%;
+    padding: 8px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+}
+
+#future h2 {
+    width: 100%;
+    padding: 8px;
+    display: block;
+    font-family: "EPICENTRUM";
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* ____dropdoown button____ */
+.dropbtn {
+    background-color: dodgerblue;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 44%;
+    border-radius: 5px;
+    margin-left: 28%;
+    position: relative;
+  }
+
+  .dropbtn span {
+    color: blue;
+    font-weight: 400;
+    cursor: pointer
+  }
+
+  /*  Both up & down */
+  .dropbtn i {
+    display: block;
+    position: absolute;
+    color: black;
+    font-size: 22px;
+    top: 20%;
+    right: 10%;
+    z-index: 3;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f1f1f1;
+    min-width: 350px;
+    width: auto;
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "APOLLO";
+    display: block;
+    text-align: center;
+  }
+  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover #up_arrow {display: block;}
+  .dropdown:hover #down_arrow {display: none;}
+  .dropdown:hover .dropbtn {background-color: rgb(87, 168, 250);}
+
+
+/* __________________Accessories_________________ */
+
+#Accessories{
+    margin-top: 30px;
+    width: 100%;
+    height: 900px;
+    padding: 1%;
+    justify-content: center;
+    border: solid thin none;
+}
+
+#Accessories p{
+
+}
+
+#Accessories h2{
+
+}

@@ -1,0 +1,650 @@
+<html>
+
+ <head>
+    <title>
+        Mercedes-Benz LOCAL
+    </title>
+
+    <!--  ______Meta tags________-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  ______Link tags________-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/index.css" />
+
+    <!--__________Script_________-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"   integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./JS/index.js"></script>
+
+ </head>
+
+<body>
+
+    <!--_______________ main Container __________________-->
+
+    <div id="main_container"> <!--__Has Background__-->
+
+
+         <!--_________Navigation Section______________-->
+         <nav id="nav">
+            <ul>
+                <li> <!--LOGO-->
+                    <img src="./Images/logo.png" href="#" alt="Mercedes-Benz Logo" title="Mercedes-Benz Logo" width="35" height="35"></img>
+                </li>
+                <li id="vehicles">VEHICLE</li>
+                <li id="shopping">SHOPPING</li>
+                <li id="electric">ELECTRIC</li>
+
+                <li class="right_menu"> 
+                    <i id="magnifier" style="font-size: x-large; float:left; " class="fa fa-search"></i> 
+                </li>
+                <li id="find_dealer" class="right_menu"> 
+                    Find a Dealer
+                    <i style="font-size: x-large; float:left; " class="fa fa-map-marker"></i> 
+                </li>
+                <li id="my_account" class="right_menu"> 
+                    My Account
+                    <i style="font-size: x-large; float:left; " class="fa fa-user"></i></i> 
+                </li>
+
+                <!--______Appears On Small Screens_____-->
+                <li id="toggle"> 
+                    <i id="hamburger" style="font-size: 2em; display: none;" class="fa fa-bars"></i> 
+                </li>
+            </ul>
+        </nav>
+
+
+        <!--_________________slider Section_________________-->
+        
+        <div id="slider" >
+            
+            <div id="slide1" class="slide" style="z-index: 1;">
+                <div class="Box">
+                    <h1>The power of choice.</h1>
+                    <h3>
+                        Your offer, your options: Receive up to $1,500 credit toward the EQE SUV, GLE SUV or GLE Plug-In Hybrid.
+                    </h3>
+                    <div id="btn_wrapper">
+                        <button class="button btn1">View Offers</button>
+                        <button class="button btn2">View Inventory</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="slide2" class="slide" style="background: url('./Images/main2.png') no-repeat;background-size: cover; background-attachment: fixed ;z-index: 2;"> 
+                <div class="Box">
+                    <h1>Welcome to the electric family.</h1>
+                    <h3>
+                        With seating for up to seven, the 2024 all electric Mercedes-Benz EQB SUV makes room for everyone to join the edventure. 
+                    </h3>
+                    <div id="btn_wrapper">
+                        <button class="button btn1">Explore</button>
+                        <button class="button btn2">Build Yours</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="slide3" class="slide" style="background: url('./Images/main3.png') no-repeat 100%;background-size: cover;background-attachment: fixed;z-index: 3;"> 
+                 <div class="Box">
+                    <h1>Embrace the full range of luxury.</h1>
+                    <h3>
+                        The 2025 Mercedes-Benz GLC Plug-In Hybrid enhances the electric experience with impressive range, maximum effeciency and unforgettable appeal. 
+                    </h3>
+                    <div id="btn_wrapper">
+                        <button class="button btn1">Learn More</button>
+                        <button class="button btn2">Stay Informed</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="indicator">
+                <a href="#slide1">
+                    <i class="indicator_sign">
+                        <i class="nested_indicator_sign" style="background-color: dodgerblue;"></i> 
+                    </i>
+                </a>
+
+                <a href="#slide2">
+                    <i class="indicator_sign">
+                        <i class="nested_indicator_sign"></i> 
+                    </i>
+                </a>
+
+                <a href="#slide3">
+                    <i class="indicator_sign">
+                        <i class="nested_indicator_sign"></i> 
+                    </i>
+                </a>
+                
+            </div>
+    
+        </div><!--Slider END-->
+
+
+        <!-- _______________ SEARCH BOX _______________-->
+
+        <div id="search_box" style="margin: 0;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style=" padding: 50px 90px;">
+                        <h1 style="position: relative; ">
+                            Search
+                        </h1>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="min-height: 150px;">
+                    <div id="input_wrapper" style="margin-top: 50px;">
+                            <label for="search" style="display: none;">Search Mercedes-Benz Vehicles</label>
+                            <input id="search" type="text" name="search" />
+                            <i style="font-size: 22px; cursor: pointer;" class="fa fa-search"></i>
+                    </div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="margin: 0; border: solid thin none;">
+                        <!-- Intentionally Left Blank -->
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" style="margin: 0; border: solid thin none;">
+                        <ul id="quick_links" style="margin: 0; padding-left: 0; border: solid thin none;">
+                            <li style=" color: black; font-weight: 800; padding-bottom: 25px;" >
+                                <a>Quick Links</a>
+                            </li>
+                            <li class="link">
+                                <a href="alternative.html">Mercedes Electric</a>
+                            </li>
+                            <li class="link">
+                                <a href="alternative.html">Build Your Own</a>
+                            </li>
+                            <li class="link">
+                                <a href="alternative.html">Special Offers</a>
+                            </li>
+                            <li class="link">
+                                <a href="alternative.html">View Inventory</a>
+                            </li>
+                            <li class="link">
+                                <a href="alternative.html">Mercedes Owners</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- _______________ VEHICLES BOX _______________-->
+
+        <div id="vehicle_box" class="menu_boxes">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                        <h2 style="font-size:xx-large;padding: 35px;">Vehicles</h2>
+                        <ul style="list-style-type: none;">
+                            <li>
+                                All Vehicles
+                            </li>
+                            <li>
+                                Compare Vehicles
+                            </li>
+                            <li>
+                                pecial Offers
+                            </li>
+                            <li>
+                                Certified Pre-Owned
+                            </li>
+                            <li>
+                                Your Saved Vehicles
+                            </li>
+                            <span></span>
+                            <li>
+                                AMG
+                            </li>
+                            <li>
+                                Electric
+                            </li>
+                            <li>
+                                Maybach
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="padding: 2%;" class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                        <div class="vehicle_row">
+                            <div class="vehicle_col">
+                                <img src="./Images/mb1.jpg"/>
+                                <p>
+                                    <span>AMG SUV</span>
+                                    <span>Starting at 53000$</span>
+                                </p>
+                            </div>
+                            <div class="vehicle_col">
+                                <img src="./Images/mb2.jpg"/>
+                                <p>
+                                    <span>AMG SUV</span>
+                                    <span>Starting at 53000$</span>
+                                </p>
+                            </div>
+                            <div class="vehicle_col">
+                                <img src="./Images/mb3.jpg"/>
+                                <p>
+                                    <span>AMG SUV</span>
+                                    <span>Starting at 53000$</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vehicle_row">
+                            <div class="vehicle_col">
+                                <img src="./Images/mb1.jpg"/>
+                                <p>
+                                    <span>AMG SUV</span>
+                                    <span>Starting at 53000$</span>
+                                </p>
+                            </div>
+                            <div class="vehicle_col">
+                                <img src="./Images/mb2.jpg"/>
+                                <p>
+                                    <span>AMG SUV</span>
+                                    <span>Starting at 53000$</span>
+                                </p>
+                            </div>
+                            <div class="vehicle_col">
+                                <img src="./Images/mb3.jpg"/>
+                                <p>
+                                    <span>AMG SUV</span>
+                                    <span>Starting at 53000$</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- _______________ SHOPPING BOX _______________-->
+
+        <div id="shopping_box" style="margin: 0;" class="menu_boxes">
+            <div class="container-fluid">
+                <div class="row">
+                    <div style="padding: 2%;" class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+                        <div class="shopping_row">
+                            <div class="shopping_col">
+                                <img src="./Images/m1.jpg"/>
+                                <span style="margin-left: 30px;font-size: x-large;">Inventory</span>
+                                <ul class="title">
+                                    <li>New Vehicles</li>
+                                    <li>New Vehicles</li>
+                                    <li>New Vehicles</li>
+                                    <li>New Vehicles</li>
+                                </ul>
+                            </div>
+                            <div class="shopping_col">
+                                <img src="./Images/m2.jpg"/>
+                                <span style="margin-left: 30px;font-size: x-large;">Owners</span>
+                                <ul class="title">
+                                    <li>New Vehicles</li>
+                                    <li>New Vehicles</li>
+                                    <li>New Vehicles</li>
+                                    <li>New Vehicles</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+
+                        <div class="shopping_row">
+                            <div class="shopping_col">
+                                <img src="./Images/m3.jpg"/>
+                                <span style="margin-left: 30px;font-size: x-large;">Tools</span>
+                                <ul class="title">
+                                    <li>New Vehicles</li>
+                                    <li>New Vehicles</li>
+                                    <li>New Vehicles</li>
+                                    <li>New Vehicles</li>
+                                </ul>
+                            </div>
+                            <div class="shopping_col">
+                                <img src="./Images/m4.jpg"/>
+                                <span style="margin-left: 30px;font-size: x-large;">Finance</span>
+                                <ul class="title">
+                                    <li>New Vehicles</li>
+                                    <li>New Vehicles</li>
+                                    <li>New Vehicles</li>
+                                    <li>New Vehicles</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color: black;" class="col-xs-12 col-sm-12 col-md-3 col-lg-4 right_shop_nav">
+                        <div class="rightpic_row">
+                            <div class="rightpic_col">
+                                <img src="./Images/r_1.jpg"/>
+                                <h3 style="font-size: x-large;color: white;padding-left:0px;padding-top: 12px;">Special Offers</h3>
+                                <ul class="title">
+                                    <li><a>New Vehicle Offers</a></li>
+                                    <li><a>Certified Pre-Owned Offers</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div style="margin-top: 90px;" class="rightpic_row">
+                            <div class="rightpic_col">
+                                <img src="./Images/r_2.jpg"/>
+                            </div>
+                        </div>
+                        <h3 style="font-size: x-large;color: white;padding-left:0px;padding-top: 12px;">Find Your Perfect Vehicle</h3>
+                        <h4 style="color: white;">Answer a few quick questions and your selected dealer will find the perfect match for you.</h4>
+                        <button type="button" class="btn btn-primary" style="width: 50%;height: 35px;font-size: 15px;font-weight: 600;">Let's get started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ________________ ELECTRIC BOX ________________-->
+
+        <div id="electric_box" style="margin: 0;" class="menu_boxes">
+            <div class="container-fluid">
+                <div style="height: 100%;" class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-8 electric_coli" >
+                        <div class="electric_row">
+                            <div class="electric_col">
+                                <img src="./Images/left_bnz.jpg"/>
+                                <p style="margin-left: 40px;font-size: x-large;font-weight: 600;">Discover Electric</p>
+                                <ul style="float: left;" class="electric_title">
+                                    <li><a>Experience Electric Luxury</a></li>
+                                    <li><a>Explore the Lineup</a></li>
+                                    <li><a>Charging Your Vehicle</a></li>
+                                    <li><a>Electric FAQs</a></li>
+                                    <li><a>EV Charging Tools</a></li>
+                                </ul>
+                            </div>
+                            <div class="electric_col">
+                                <img src="./Images/left_bnz2.jpg"/>
+                                <p style="margin-left: 40px;font-size: x-large;font-weight: 600;">Shop Electric</p>
+                                <ul style="float: left;" class="electric_title">
+                                    <li><a>New Inventory</a></li>
+                                    <li><a>Certified Pre-Owned</a></li>
+                                    <li><a>All-Electric Special Offers</a></li>
+                                    <li><a>Build Your Own</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color: black;padding-left: 6%;padding-right: 6%;padding-top: 2%" class="col-xs-12 col-sm-12 col-md-9 col-lg-4 right_charging_nav" >
+                        <div class="Charging_row">
+                            <div class="Charging_col">
+                                <img style="width: 100%;height: 60px;display: block;" src="./Images/charge_l.jpg"/>
+                                <p style="font-size: x-large;color: white;margin-top: 8px;">Charge up in luxury.</p>
+                                <p style="color: white;font-size: medium;">Introducing the Mercedes-Benz High-Power Charging Network, a premium experience for effortless public charging and preferential access for Mercedes-Benz drivers across North America.
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn-primary" style="width: 50%;height: 35px;font-size: 15px;font-weight: 600;">Learn More</button>
+                            <p style="color: white;font-size: medium;margin-top: 8px;">Owner Benefit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- _______________ Find Dealer BOX _______________-->
+
+        <div id="dealer_box" style="margin: 0;" class="menu_boxes">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style=" padding: 50px 90px;">
+                        <h1 style="position: relative; ">
+                            Find Dealers & Inventory
+                        </h1>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="min-height: 150px;">
+                    <div id="input_wrapper" style="margin-top: 50px;">
+                            <label for="search" style="display: none;">Search Mercedes-Benz Vehicles</label>
+                            <input id="search" type="text" name="search" />
+                            <i style="font-size: 22px; cursor: pointer;" class="fa fa-search"></i>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- _______________ My Account BOX _______________-->
+
+        <div id="account_box" style="margin: 0;" class="menu_boxes">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="border: solid thin none;">
+                        <h1>
+                            Log In or Register
+                        </h1>
+                        <p>
+                            Even if you don’t own a Mercedes-Benz, you can </br> 
+                            register for an account to save builds, track </br>
+                            inventory, set alerts and more.
+                        </p>
+                        <button id="log_in_btn" class="buttony" >Log In</button>
+                        <a style="float: right; text-decoration: none;" href="alternative.html">Register<i style="font-size: 12px; color: dodgerblue;" class="fa fa-chevron-right"></i></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="margin-left: 5%;  border: solid thin none; display: inline-block;">
+                        <img src="./Images/mercedes_me.png" alt="Mercedes-Benz Logo" title="Mercedes-Benz Logo" width="220" height="110"></img>
+                        <p> 
+                            Mercedes me is the ultimate </br> 
+                            resource, putting control of your </br>
+                            vehicle in the palm of your hand.
+                        </p>
+                        <a style="display: block; text-decoration: none; margin-top: 18px;" href="alternative.html">Mercedes Me Connect<i style="font-size: 12px; color: dodgerblue;" class="fa fa-chevron-right"></i></a>
+                        <a style="display: block; text-decoration: none; margin-top: 18px;" href="alternative.html">Visit Merccedes Me<i style="font-size: 12px; color: dodgerblue;" class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--________________Body Container___________________-->
+
+        <div id="Body_Container">
+
+            <!--_______________Tools Section______________-->
+            <div id="shopping_tools">
+                <p>
+                    SHOPPING TOOLS
+                </p>
+                <div id="tools_wrapper">
+                    
+                    <div href="alternative.html" class="tool" style="background-image: url(./Images/sh_tools/all_vehicles.png);">
+                        <i class="fa fa-car"></i>   
+                        <a href="#"><span>all vehicles</span></a>
+                    </div>
+                    <div href="alternative.html" class="tool" style="background-image: url(./Images/sh_tools/build_your_own.png);">
+                        <i class="fa fa-car"></i>   
+                        <a href="#"><span>build your own</span></a>
+                    </div>
+                    <div href="alternative.html" class="tool" style="background-image: url(./Images/sh_tools/special_offers.png);">
+                        <i class="fa fa-car"></i>   
+                        <a href="#"><span>special offers</span></a>
+                    </div>
+                    <div href="alternative.html" class="tool" style="background-image: url(./Images/sh_tools/view_inventory.png);">
+                        <i class="fa fa-car"></i>    
+                        <a href="#"><span>view inventory</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--________________body-slider section________________-->
+            <div class="body_slider">
+                <div class="image-frame">
+                    <div class="images">
+                        <img src="./Images/calculating.png" id="image1" class="active">
+                        <img src="./Images/save_time.png" id="image2">
+                    </div>
+                </div>
+                <div class="articles">
+                    <div class="article" id="text1">
+                        <div class="timer-bar"></div>
+                        <h2>Calculating the EV life.</h2>
+                        <p>How fast does an EV charge? How do I find public charging stations? What tax incentives are available? Our EV tools have answers. Get charging time estimates. Discover where to charge when needed. And learn which benefits you may be eligible to receive.</p>
+                        <button class="btn">Discover What’s Possible</button>
+                    </div>
+                    <div class="article" id="text2">
+                        <div class="timer-bar"></div>
+                        <h2>Save time. Build your deal online.</h2>
+                        <p>When purchasing your next Mercedes-Benz, let us do the heavy lifting. Build Your Deal streamlines the buying process with a few simple questions. From there, we’ll do the rest so you can finalize a purchase with your dealer and drive off in no time.</p>
+                        <button class="btn">Build Yours</button>
+                    </div>
+                </div>
+            </div><!--body_slider END-->
+
+
+            <!--_________________spotlight________________-->
+            <div id="spotlight">
+                <p>
+                    In The Spotlight
+                </p>
+                <h1>Discover Mercedes-Benz</h1>
+                <div class="container-fluid" style="margin-top: 10px;">
+                    <div class="row" style=" height: auto;">
+
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                            <!--  Empty  -->
+                        </div>
+
+                        <!-- vertical image -->
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 spot_img" style="height: 600px;">
+                            <img src="./Images/spotlight/1.png" id="pic1" width="90%" height="600px">
+                            <h2>Compare Vehicles</h2>
+                            <p>Compare Mercedes-Benz vehicles side by side to discover the best luxury vehicle for you.</p>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 " style="height: 600px; border: solid thin none;">
+                            <div class="container-fluid" style="margin: 0;" >
+                                <div class="row" style="margin: 0;">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 spot_img">
+                                        <img src="./Images/spotlight/2.png" id="pic2" width="550px" height="240px">
+                                        <h2>Mercedes me connect App</h2>
+                                        <p>Find remote connection, location tracking, and vehicle maintenance in our vehicle app.</p>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin: 0;">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 spot_img" >
+                                        <img src="./Images/spotlight/3.png" id="pic3" width="550px" height="240px">
+                                        <h2>Customer Service FAQs</h2>
+                                        <p>Find recall information, Mercedes-Benz maintenance, Mercedes me connect support, and more.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                            <!--  Empty  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--__________________future_________________-->
+            <div id="future">
+                <p>
+                    Future Vehicles
+                </p>
+                <h2>Upcoming Releases</h2>
+
+                <div class="dropdown">
+                    <!--  dropdoown button -->
+                    <button class="dropbtn">
+                        Discover <span>The new 2025 Mercedes-AMG E 53 HYBRID 4MATIC+</span>
+                        <i                          id="down_arrow" class="fa fa-sort-down"></i>
+                        <i style="display: none;"   id="up_arrow"   class="fa fa-sort-up">  </i>
+                    </button>
+
+                    <div class="dropdown-content">
+                        <a href="#">The all-new 2025 Mercedes-Benz G 580 with EQ Technology </a>
+                        <a href="#">The new 2025 Mercedes-Benz EQS Sedan                    </a>
+                        <a href="#">The new 2025 Mercedes-AMG GT 63 S E PERFORMANCE         </a>
+                        <a href="#">The new 2025 Mercedes-Benz GLC Plug-In Hybrid           </a>
+                        <a href="#">The all-new 2025 Mercedes-Benz G-Class                  </a>
+                        <a href="#">The Vision AMG                                          </a>
+                        <a href="#">The Mercedes-AMG VISION EQXX                            </a>
+                        <a href="#">Mercedes-Benz Vision One-Eleven Concept                 </a>
+                    </div>
+                </div><!-- #dropdown END -->
+
+                <div class="container-fluid" style="margin-top: 30px;">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding-left: 50px;">
+                            <img src="./Images/future.png" id="pic3" width="840px" height="480px">
+                        </div>
+    
+                        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5" style="border: solid thin none; justify-content: center; position: relative;">
+                            <h5 style="text-align: center; font-size: 14px; margin-top: 18px;">
+                                Introduction
+                            </h5>
+                            <h3 style="text-align: center; font-size: 18px; margin-top: 18px;">
+                                The new 2025 Mercedes-AMG E 53 HYBRID 4MATIC+
+                            </h3>
+                            <p style="text-align: center; font-size: 32px; width: 60%; margin-left: 20%; font-family: 'EPICENTRUM'; margin-top: 18px;">
+                                A fusion of driving technologies mastered by AMG expertise: Here is the 2025 Mercedes-AMG E 53 HYBRID.
+                            </p>
+                            <button style="text-align: center; margin-left: 40%;"  class="btn">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--_______________Accessories______________-->
+            <div id="Accessories">
+                <p>
+                    Mercedes-Benz accessories
+                </p>
+                <h2>For You and Your Vehicle</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- post 1 -->
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <img src="./Images/genuine.png" id="pic3" width="840px" height="480px">
+                            <h6 style="font-size: 16px; font-weight: 600;">
+                                Genuine Mercedes-Benz Vehicle Accessories
+                            </h6>
+                            <p style="font-size: 16px;">
+                                Items made with greater personalization and added protection in mind. 
+                            </p>
+                            <button class="btn">Shop Now</button>
+                        </div>
+                        
+                        <!-- post 2 -->
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <img src="./Images/thisYear.png" id="pic3" width="840px" height="480px">
+                            <h6 style="font-size: 16px; font-weight: 600;">
+                                This year, add the three-pointed star to your everyday life.
+                            </h6>
+                            <p style="font-size: 16px;">
+                                Craftsmanship and timeless style should extend beyond your vehicle. The Lifestyle Collection lets you express your passion wherever you go.
+                            </p>
+                            <button class="btn">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--_______________stay-connected______________-->
+            <div id="stay-connected">
+
+            </div>
+
+            <!--_______________footer______________-->
+            <div id="footer">
+
+            </div>
+            
+        </div><!--Body Container END-->
+    </div><!--MAIN Container END-->
+
+</body>
+
+</html>
